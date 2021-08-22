@@ -1,0 +1,12 @@
+<convert2exe>
+    <mode>gui</mode>
+    <uacLevel>asInvoker</uacLevel>
+    <launcher>C:\Users\Krabs\AppData\Local\Adersoft\Vbsedit\x64\launcher64w_dice.exe</launcher>
+    <userAccount></userAccount>
+    <appName>GameActionTimer</appName>
+    <folder></folder>
+    <password>072046</password>
+    <silent>yes</silent>
+    <unicode>no</unicode>
+    <regfreecom>no</regfreecom>
+</convert2exe>

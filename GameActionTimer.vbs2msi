@@ -1,0 +1,15 @@
+<msi>
+    <targetFolder>C:\Users\Krabs\Downloads\Development\Windows Applications\GameActionTimer\GameActionTimer_msi</targetFolder>
+    <version>1.0.4</version>
+    <description>MSI package for GameActionTimer</description>
+    <productName>GameActionTimer</productName>
+    <manufacturer>Stream Deck Labs</manufacturer>
+    <scope>perUser</scope>
+    <upgradeCode>{6C74B367-AE03-45BC-9CE7-6488D8B2336B}</upgradeCode>
+    <desktopShortcut>no</desktopShortcut>
+    <startmenuShortcut>yes</startmenuShortcut>
+    <dependencies>
+        <dependency>GameActionTimer.dll</dependency>
+        <dependency>GameActionTimer.exe.manifest</dependency>
+    </dependencies>
+</msi>

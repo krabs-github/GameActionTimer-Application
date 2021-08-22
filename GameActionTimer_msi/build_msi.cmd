@@ -1,0 +1,5 @@
+cd "C:\Users\Krabs\Downloads\Development\Windows Applications\GameActionTimer\GameActionTimer_msi"
+"C:\Program Files (x86)\WiX Toolset v3.11\bin\candle.exe" "GameActionTimer.wxs"
+"C:\Program Files (x86)\WiX Toolset v3.11\bin\light.exe" -sw -out "GameActionTimer.msi" "GameActionTimer.wixobj"
+del "GameActionTimer.wixobj"
+del "GameActionTimer.wixpdb"
