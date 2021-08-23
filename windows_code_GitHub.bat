@@ -22,7 +22,7 @@ echo day=%day%
 set datetimef=%month%%day%%year%_%hour%%min%%secs%
 set vBatPath="C:\Users\Krabs\Downloads\Development\GitHub_Repositories"
 
-xcopy /Y /s %CurrDirName%\ "%vBatPath%\%CurrDirName%\"
+xcopy /Y /s * "%vBatPath%\%CurrDirName%\"
 
 
 echo set WshShell = WScript.CreateObject("WScript.Shell") > %tmp%\tmp.vbs
