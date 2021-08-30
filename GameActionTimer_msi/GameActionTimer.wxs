@@ -1,52 +1,52 @@
 <?xml version = '1.0' encoding = 'windows-1252' ?>
 <Wix xmlns = 'http://schemas.microsoft.com/wix/2006/wi'>
-<Product Name = 'GameActionTimer' Id = '{08E9B265-7DAB-4E5A-AB1D-86A5DB1100BA}' UpgradeCode = '{6C74B367-AE03-45BC-9CE7-6488D8B2336B}' Language = '1033' Codepage = '1252' Version = '1.0.6' Manufacturer = 'Stream Deck Labs'>
-<Package InstallerVersion = "200" Id = '*' Platform = "x64" Keywords = 'Installer' Description = "char 2.0 Installer" Comments = 'MSI package for GameActionTimer' Manufacturer = 'Stream Deck Labs' Languages = '1033' Compressed = 'yes' SummaryCodepage = '1252' InstallPrivileges ="limited" InstallScope = "perUser" />
+<Product Name = 'GameActionTimer' Id = '{83E64303-A322-40E4-B86E-A0DBF1885529}' UpgradeCode = '{6C74B367-AE03-45BC-9CE7-6488D8B2336B}' Language = '1033' Codepage = '1252' Version = '1.0.14' Manufacturer = 'StreamDeckLabs'>
+<Package InstallerVersion = "200" Id = '*' Platform = "x64" Keywords = 'Installer' Description = "char 2.0 Installer" Comments = 'MSI package for GameActionTimer' Manufacturer = 'StreamDeckLabs' Languages = '1033' Compressed = 'yes' SummaryCodepage = '1252' InstallPrivileges ="limited" InstallScope = "perUser" />
 <MajorUpgrade AllowSameVersionUpgrades = "no" DowngradeErrorMessage = "A newer version of GameActionTimer is already installed." />
 <Media Id = '1' Cabinet = 'setup.cab' EmbedCab = 'yes' DiskPrompt = 'CD - ROM #1' />
-<Property Id = 'DiskPrompt' Value = 'GameActionTimer 1.0.6 Installation[1]' />
+<Property Id = 'DiskPrompt' Value = 'GameActionTimer 1.0.14 Installation[1]' />
 <Icon Id = "MyIcon.ico" SourceFile = "C:\Users\Krabs\Downloads\Development\Windows Applications\GameActionTimer-Application\GameActionTimer.exe" />
 <Property Id = "ARPPRODUCTICON" Value = "MyIcon.ico" />
 <Directory Id = 'TARGETDIR' Name = 'SourceDir'>
 <Directory Id = "ProgramMenuFolder">
-<Directory Id = "ApplicationProgramsFolder" Name = "Stream Deck Labs GameActionTimer" />
+<Directory Id = "ApplicationProgramsFolder" Name = "StreamDeckLabs GameActionTimer" />
 </Directory>
 <Directory Id = "DesktopFolder" Name = "Desktop"/>
 <Directory Id = 'LocalAppDataFolder'>
-<Directory Id = 'INSTALLDIR' Name = 'Stream Deck Labs GameActionTimer'>
+<Directory Id = 'INSTALLDIR' Name = 'StreamDeckLabs GameActionTimer'>
 </Directory>
 </Directory>
 </Directory>
 <DirectoryRef Id = 'INSTALLDIR'>
-<Component Win64 = "yes" Id = 'MainScript' Guid = '{D0A3096A-0A20-4D93-A073-F80DDBB59871}'>
+<Component Win64 = "yes" Id = 'MainScript' Guid = '{1BC4EFD2-5301-496D-8308-4FA1521A0BA9}'>
 <File Id = 'vbs_id' Name = 'GameActionTimer.exe' DiskId = '1' Source = 'C:\Users\Krabs\Downloads\Development\Windows Applications\GameActionTimer-Application\GameActionTimer.exe' KeyPath = 'no' />
-<RegistryValue Root = "HKCU" Key = "Software\Stream Deck Labs\GameActionTimer" Name = "installed" Type = "integer" Value = "1" KeyPath = 'yes' />
+<RegistryValue Root = "HKCU" Key = "Software\StreamDeckLabs\GameActionTimer" Name = "installed" Type = "integer" Value = "1" KeyPath = 'yes' />
 <RemoveFolder Id = "CleanUpMainFolder" On="uninstall" />
 </Component>
 </DirectoryRef>
 <DirectoryRef Id = 'INSTALLDIR'>
-<Component Win64 = "yes" Id = 'component_0' Guid = '{F86A90BE-2CDB-4391-B143-E737B448A53B}'>
+<Component Win64 = "yes" Id = 'component_0' Guid = '{55077A97-619D-4291-A9FF-6B4460707461}'>
 <File Id = 'file_0' Name = 'GameActionTimer.dll' DiskId = '1' Source = 'C:\Users\Krabs\Downloads\Development\Windows Applications\GameActionTimer-Application\GameActionTimer.dll' KeyPath = 'no' />
-<RegistryValue Root = "HKCU" Key = "Software\Stream Deck Labs\GameActionTimer" Name = "installed" Type = "integer" Value = "1" KeyPath = 'yes' />
+<RegistryValue Root = "HKCU" Key = "Software\StreamDeckLabs\GameActionTimer" Name = "installed" Type = "integer" Value = "1" KeyPath = 'yes' />
 </Component>
 </DirectoryRef>
 <DirectoryRef Id = 'INSTALLDIR'>
-<Component Win64 = "yes" Id = 'component_1' Guid = '{E937871E-DDAD-40CE-B3A1-69BE4391CF33}'>
+<Component Win64 = "yes" Id = 'component_1' Guid = '{1BDEF4B4-5CC6-4841-AAE8-926A0B7D2A7F}'>
 <File Id = 'file_1' Name = 'GameActionTimer.exe.manifest' DiskId = '1' Source = 'C:\Users\Krabs\Downloads\Development\Windows Applications\GameActionTimer-Application\GameActionTimer.exe.manifest' KeyPath = 'no' />
-<RegistryValue Root = "HKCU" Key = "Software\Stream Deck Labs\GameActionTimer" Name = "installed" Type = "integer" Value = "1" KeyPath = 'yes' />
+<RegistryValue Root = "HKCU" Key = "Software\StreamDeckLabs\GameActionTimer" Name = "installed" Type = "integer" Value = "1" KeyPath = 'yes' />
 </Component>
 </DirectoryRef>
 <DirectoryRef Id = 'INSTALLDIR'>
-<Component Win64 = "yes" Id = 'component_2' Guid = '{A151A0A7-2D8C-4C1E-A064-193BD8DB0B15}'>
+<Component Win64 = "yes" Id = 'component_2' Guid = '{62631013-F793-4922-B12C-DB6EB101A7B9}'>
 <File Id = 'file_2' Name = 'readme.txt' DiskId = '1' Source = 'C:\Users\Krabs\Downloads\Development\Windows Applications\GameActionTimer-Application\readme.txt' KeyPath = 'no' />
-<RegistryValue Root = "HKCU" Key = "Software\Stream Deck Labs\GameActionTimer" Name = "installed" Type = "integer" Value = "1" KeyPath = 'yes' />
+<RegistryValue Root = "HKCU" Key = "Software\StreamDeckLabs\GameActionTimer" Name = "installed" Type = "integer" Value = "1" KeyPath = 'yes' />
 </Component>
 </DirectoryRef>
 <DirectoryRef Id = "ApplicationProgramsFolder">
-<Component Win64 = "yes" Id = 'ApplicationShortcutStartmenu' Guid = '{B123619B-FC0E-4FEC-AE1B-21AC6B5D1AFF}'>
+<Component Win64 = "yes" Id = 'ApplicationShortcutStartmenu' Guid = '{2194FE26-DD0B-4083-BC2F-930FECF897B0}'>
 <Shortcut  Id = "ApplicationStartMenuShortcut" Name = "GameActionTimer" Description = "MSI package for GameActionTimer" Target = "[INSTALLDIR]GameActionTimer.exe" WorkingDirectory = "INSTALLDIR" Arguments = "&quot;[INSTALLDIR]GameActionTimer.exe&quot;" />
 <RemoveFolder Id = "StartmenuFolder" On="uninstall" />
-<RegistryValue Root = "HKCU" Key = "Software\Stream Deck Labs\GameActionTimer" Name = "installed" Type = "integer" Value = "1" KeyPath = 'yes' />
+<RegistryValue Root = "HKCU" Key = "Software\StreamDeckLabs\GameActionTimer" Name = "installed" Type = "integer" Value = "1" KeyPath = 'yes' />
 </Component>
 </DirectoryRef>
 <Feature Id = 'Complete' Level = '1'>
