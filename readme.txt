@@ -1,11 +1,9 @@
 Stream Deck Labs - GameActionTimer Application for use with Game Action Timer for Stream Deck
 
-Usage:
-"%localappdata%/StreamDeckLabs GameActionTimer/GameActionTimer.exe" <action name from Stream Deck button> <cooldown time in seconds>
+Usage: C:\Users\Krabs\AppData\Roaming\StreamDeckLabs\GameActionTimer
 
-Example:
-"%localappdata%/StreamDeckLabs GameActionTimer/GameActionTimer.exe" potion1 30
+Example: C:\Users\Krabs\AppData\Roaming\StreamDeckLabs\GameActionTimer "potion1" "30"
 
-- The <action name> must be the same <action name> from the Stream Deck button.
-- No spaces are allowed in the <action name>. Underscores are permitted.
-- To uninstall, use Add/Remove programs to uninstall.
+The must be the same from the Stream Deck button.
+No spaces are allowed in the . Underscores are permitted.
+To uninstall, use Add/Remove programs to uninstall.
