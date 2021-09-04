@@ -1,0 +1,54 @@
+; InstallSimple project
+
+[Setup]
+WindowTitle=Stream Deck Labs - GameActionTimer Application Installer
+ProductName=GameActionTimer
+
+[Graphics]
+SplashScreen=C:\Users\Krabs\Pictures\Web\installer_bmp.bmp
+SplashScreenDelay=3
+Header=
+HeaderJustify=Right
+HeaderFontColor=0
+WizardBitmap=C:\Users\Krabs\Downloads\My Portable Apps\InstallSimple 3.0 portable\images\2.bmp
+WizardFontColor=0
+
+[FirstMessage]
+Stream Deck Labs provides the software to you "As Is" and without warranty of any kind, express, statutory, implied or otherwise, including without limitation any warranty of merchantability, fitness for a particular purpose or infringement.
+
+No oral or written information or advice given to you by any actify employee, representative or distributor will create a warranty for the software, and you may not rely on any such information or advice.
+[LastMessage]
+Thank you for using our software. For usage instructions and configuration ofr use with the Stream Deck Labs - GameActionTImer plugin, go to: 
+
+https://www.krabs.me/streamdeck-plugins/game-action-timer
+
+[LicenseAgreement]
+MIT License:
+Copyright 2021 Stream Deck Labs
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+[SetupFiles]
+SourceFolder=C:\Users\Krabs\Downloads\Development\Windows Applications\GameActionTimer-Application\Setup\Source Files
+SpecialFolder=Application Data
+SetupPath=StreamDeckLabs
+SetupFile=C:\Users\Krabs\Downloads\Development\Windows Applications\GameActionTimer-Application\Setup\Setup Stream Deck Labs - GameActionTimer.exe
+
+[Shortcuts]
+ProgramGroup=Stream Deck Labs
+GameActionTimer.exe=p
+
+[Registry]
+
+[Requirements]
+OperatingSystem=1
+NetFramework=0
+NetFrameworkLink=http://www.microsoft.com/en-us/download/details.aspx?id=17718
+AdminRights=0
+
+[AfterInstalling]
+Reboot=0
