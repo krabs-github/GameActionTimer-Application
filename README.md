@@ -1,4 +1,5 @@
 # GameActionTimer-Application
+![Image](https://i.postimg.cc/KYMND8PD/Game-Action-Timer-Application.png)
 
 Stream Deck Labs - GameActionTimer Application for use with Game Action Timer for Stream Deck
 
